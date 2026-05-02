@@ -10,8 +10,8 @@ export default function Skills() {
     "Tailwind",
   ];
     const data = [
-      { icon: "/icons/vue.svg",skills: "Vue 3"},
-      { icon: "/icons/nuxt.svg",skills: "Nuxt 4"},
+      { icon: "/icons/vue.svg",skills: "Vue3"},
+      { icon: "/icons/nuxt.svg",skills: "Nuxt4"},
       { icon: "/icons/pinia.svg",skills: "Pinia"},
       { icon: "/icons/react.svg",skills: "React"},
       { icon: "/icons/next.svg",skills: "Next.ts"},

@@ -31,7 +31,7 @@ export default function Projects() {
       <h2>精選專案</h2>
       <Row gutter={16}>
         {projects.map((p, i) => (
-          <Col xs={{span:24}} lg={{span:8}} key={i} style={{marginBottom:"16px"}}>
+          <Col xs={{span:24}} md={{span:8}} lg={{span:8}} key={i} style={{marginBottom:"16px"}}>
             <Link href={`${p.link}`} target="_blank">
             <Card
               hoverable

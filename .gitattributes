@@ -1,2 +1,26 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Nuxt dev/build outputs
+.output
+.data
+.next
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example

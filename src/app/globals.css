@@ -1,0 +1,245 @@
+body {
+  background: #f7f9fb;
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+main{
+  background-color: #FFF;
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header 基本 */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 10%;
+  background: rgba(255, 255, 255, 0.8);
+
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+.name{
+  font-size: 48px;
+  line-height: 40px;
+  color: #00b96b;
+}
+
+/* 滾動效果 */
+.header.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo .dot {
+  width: 8px;
+  height: 8px;
+  background: #00b96b;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #00b96b;
+}
+
+/* CTA */
+.cta {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Section */
+.section {
+  padding: 80px 5%;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  width: 90%;
+  gap: 16px;
+}
+
+
+
+.hero-left{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.hero-left .name{
+  color: #00b96b;
+}
+
+.hero-left h1 {
+  font-size: 42px;
+}
+
+.hero-left .btn-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-left .btn1 {
+ background-color: #00b96b !important;
+}
+.hero-left .btn2 {
+  color: #00b96b;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.hero-right img {
+  width: 80%;
+}
+
+
+
+/* Center */
+.center {
+  text-align: center;
+}
+
+.statsWarp{
+  width: 100%;
+  padding: 0px 5%;
+  justify-content: space-between;
+  align-items: center;
+  & p{
+    line-height: 24px;
+  }
+}
+
+.statsCard{
+  width:66%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-items: center;
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #F0F0F0;
+  & img{
+    width: 48px;
+    margin: 0 auto;
+  }
+  & .text{
+    & h2{
+      margin: 0;
+    }
+    & p{
+      margin-bottom: 0;
+    }
+  }
+  
+}
+
+
+.skillsWarp{
+  padding: 0px 10%;
+  width: 90%;
+  
+}
+
+.tags{
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: space-between;
+}
+.tags .tag{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #F0F0F0;
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  min-height: 80px;
+  min-width: 60px;
+}
+
+.experienceWarp{
+  margin-top: 24px;
+  padding: 24px 5% 16px;
+  border:1px solid #f7f9fb;
+  & .time{
+    color: #C2C2C2;
+    line-height: 24px;
+  }
+}
+
+@media (min-width:768px) {
+  .hero {
+    padding: 80px 5%;
+  }
+  .hero-left{
+    width: 50%;
+  }
+  .hero-right{
+    width: 45%;
+  }
+
+  .experienceMob{
+    display: none;
+  }
+}
+
+@media (max-width:768px) {
+    .header {
+      display: none;
+    }
+
+    .experienceWeb{
+      display: none;
+    }
+}

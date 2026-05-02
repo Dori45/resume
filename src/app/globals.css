@@ -186,7 +186,6 @@ main{
 }
 
 .tags{
-  max-width: 900px;
   margin: 0 auto;
   gap: 16px;
   display: flex;

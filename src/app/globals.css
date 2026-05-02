@@ -217,6 +217,7 @@ main{
   }
 }
 
+
 @media (min-width:768px) {
   .hero {
     padding: 80px 5%;
@@ -227,7 +228,9 @@ main{
   .hero-right{
     width: 45%;
   }
-
+    .projectCard{
+      height:320px;
+    }
   .experienceMob{
     display: none;
   }

@@ -36,7 +36,7 @@ export default function Projects() {
             <Card
               hoverable
               cover={<img src={p.img} />}
-              style={{height:"320px"}}
+              className="projectCard"
               
             >
               <h3 style={{ marginTop: 12 }}>{p.title}</h3>

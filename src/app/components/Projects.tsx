@@ -8,7 +8,7 @@ export default function Projects() {
   const projects = [
     {
       title: "管理後台",
-      desc: "Nuxt4 + TypeScript 建立後台系統，透過vinding Code使用Java建立後端",
+      desc: "Nuxt4 + TypeScript 建立後台系統，透過AI協助使用Java建立後端",
       link:"https://github.com/Dori45",
       img:"/images/project3.png"
     },
